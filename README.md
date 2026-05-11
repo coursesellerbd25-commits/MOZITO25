@@ -1,16 +1,75 @@
-# React + Vite
+# MOZITO25
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React.js-based multi-game platform featuring browser-playable mini games built to practice frontend development, component architecture, state management, and interactive game logic using React.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
 
-## React Compiler
+🎮 Main Platform: https://coursesellerbd25-commits.github.io/MOZITO25/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 GitHub Repository: https://github.com/coursesellerbd25-commits/MOZITO25
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Overview
+
+MOZITO25 is a frontend-focused gaming platform project developed with React.js to combine multiple browser games into a single interactive experience.
+
+The project was built to strengthen practical React.js skills through game development and interactive UI implementation.
+
+Currently included games:
+
+- 🐍 Snake Game
+- ❌⭕ Tic-Tac-Toe
+
+The platform demonstrates:
+
+- React component architecture
+- State management
+- Dynamic rendering
+- Game logic implementation
+- Interactive frontend development
+
+---
+
+## ✨ Features
+
+- Multi-game platform structure
+- Build entirely with React.js
+- Responsive game interface
+- Interactive gameplay logic
+- Component-based architecture
+- GitHub Pages deployment
+- Modern gaming-inspired UI
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- JavaScript
+- Tailwind CSS
+- CSS3
+
+### Deployment
+- GitHub Pages
+
+---
+
+# 🎲 Included Games
+
+---
+
+## 🐍 Snake Game
+
+A classic Snake Game developed using React.js featuring keyboard controls, collision detection, and score tracking.
+
+### 🔗 Live Demo
+https://coursesellerbd25-commits.github.io/snake-game/
+
+### 🔗 Repository
+https://github.com/coursesellerbd25-commits/snake-game
+
