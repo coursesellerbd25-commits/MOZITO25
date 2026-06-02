@@ -5,23 +5,63 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 export default function App() {
-const gamesRef = useRef(null);
+  const gamesRef = useRef(null);
+  const [loading, setLoading] = useState(true);
+  const [progress, setProgress] = useState(0);
   const games = [
-  {
-    title: "Snake Game",
-    desc: "Classic snake with a modern twist.",
-    img: `${import.meta.env.BASE_URL}snakeGame.png`,
-    link: "https://coursesellerbd25-commits.github.io/snake-game/",
-  },
-  {
-    title: "Tic-Tac-Toe",
-    desc: "Win in 3… if you can.",
-    img: `${import.meta.env.BASE_URL}ticTacToe.png`,
-    link: "https://coursesellerbd25-commits.github.io/TICTACTOEAPP/",
-  },
-];
+    {
+      title: "Snake Game",
+      desc: "Classic snake with a modern twist.",
+      img: `${import.meta.env.BASE_URL}snakeGame.png`,
+      link: "https://coursesellerbd25-commits.github.io/snake-game/",
+    },
+    {
+      title: "Tic-Tac-Toe",
+      desc: "Win in 3… if you can.",
+      img: `${import.meta.env.BASE_URL}ticTacToe.png`,
+      link: "https://coursesellerbd25-commits.github.io/TICTACTOEAPP/",
+    },
+  ];
+  
+
+  useEffect(() => {
+    let value = 0;
+
+    const interval = setInterval(() => {
+      value += 2;
+      setProgress(value);
+
+      if (value >= 100) {
+        clearInterval(interval);
+
+        setTimeout(() => {
+          setLoading(false);
+        }, 500);
+      }
+    }, 40);
+
+    return () => clearInterval(interval);
+  }, []); 
+
+  if (loading) {
+  return (
+    <div className="loader-screen">
+      <h1 className="loader-title">MOZITO25</h1>
+
+      <div className="loader-bar">
+        <div
+          className="loader-fill"
+          style={{ width: `${progress}%` }}
+        />
+      </div>
+
+      <p className="loader-text">{progress}%</p>
+    </div>
+  );
+}
 
   return (
     <div className="h-screen w-full">
