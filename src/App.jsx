@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { useRef } from "react";
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function App() {
   const gamesRef = useRef(null);
